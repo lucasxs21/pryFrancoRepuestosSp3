@@ -50,14 +50,20 @@ namespace pryFrancoRepuestosSp3
                 vec[contador].Descripcion = rtbDescripcion1.Text;             
 
                 contador++;
+                Limpiador();
 
-            }
-            else
-            {
-                MessageBox.Show("vector lleno");
-            }
+
+            }                  
                     
-                    
+        }
+        public void Limpiador()
+        {
+            lstMarca1.SelectedIndex = -1;
+            lstOrigen.SelectedIndex = -1;
+            txtNumero1.Text = "";
+            txtPrecio1.Text = "";
+            rtbDescripcion1.Text = "";
+            lstMarca1.Focus();
         }
 
         private void btnConsulta_Click(object sender, EventArgs e)
@@ -72,7 +78,7 @@ namespace pryFrancoRepuestosSp3
                     {
                         if (vec[indice].origen == "I")
                         {
-                            rtbDescripcion2.Text = rtbDescripcion2.Text + "Numero: " + vec[indice].Numero.ToString() + " " + "Precio: " + vec[indice].Precio.ToString() +" "+ "Descripcion" + vec[indice].Descripcion.ToString() + "\n";
+                            rtbDescripcion2.Text = rtbDescripcion2.Text + "Numero: " + vec[indice].Numero.ToString() + " " + "Precio: " + vec[indice].Precio.ToString() +" "+ "Descripcion" + " " + vec[indice].Descripcion.ToString() + "\n";
 
                         }
                     }
@@ -80,7 +86,7 @@ namespace pryFrancoRepuestosSp3
                     {
                         if (vec[indice].origen == "N")
                         {
-                            rtbDescripcion2.Text = rtbDescripcion2.Text + "Numero: " + vec[indice].Numero.ToString() + " " + "Precio: " + vec[indice].Precio.ToString() + " " + "Descripcion" + vec[indice].Descripcion.ToString() + "\n";
+                            rtbDescripcion2.Text = rtbDescripcion2.Text + "Numero: " + vec[indice].Numero.ToString() + " " + "Precio: " + vec[indice].Precio.ToString() + " " + "Descripcion" + " " + vec[indice].Descripcion.ToString() + "\n";
 
                         }
                     }

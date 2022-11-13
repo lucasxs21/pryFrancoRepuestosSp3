@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.mrcDatos = new System.Windows.Forms.GroupBox();
             this.lstOrigen = new System.Windows.Forms.ComboBox();
             this.txtPrecio1 = new System.Windows.Forms.TextBox();
@@ -67,11 +68,9 @@
             this.mrcDatos.Controls.Add(this.lstMarca1);
             this.mrcDatos.Controls.Add(this.rtbDescripcion1);
             this.mrcDatos.Controls.Add(this.lblMarca1);
-            this.mrcDatos.Location = new System.Drawing.Point(16, 15);
-            this.mrcDatos.Margin = new System.Windows.Forms.Padding(4);
+            this.mrcDatos.Location = new System.Drawing.Point(12, 12);
             this.mrcDatos.Name = "mrcDatos";
-            this.mrcDatos.Padding = new System.Windows.Forms.Padding(4);
-            this.mrcDatos.Size = new System.Drawing.Size(912, 300);
+            this.mrcDatos.Size = new System.Drawing.Size(684, 244);
             this.mrcDatos.TabIndex = 0;
             this.mrcDatos.TabStop = false;
             this.mrcDatos.Text = "Datos de Repuestos";
@@ -83,26 +82,23 @@
             this.lstOrigen.Items.AddRange(new object[] {
             "N",
             "I"});
-            this.lstOrigen.Location = new System.Drawing.Point(124, 111);
-            this.lstOrigen.Margin = new System.Windows.Forms.Padding(4);
+            this.lstOrigen.Location = new System.Drawing.Point(93, 97);
             this.lstOrigen.Name = "lstOrigen";
-            this.lstOrigen.Size = new System.Drawing.Size(160, 24);
+            this.lstOrigen.Size = new System.Drawing.Size(121, 21);
             this.lstOrigen.TabIndex = 9;
             // 
             // txtPrecio1
             // 
-            this.txtPrecio1.Location = new System.Drawing.Point(669, 121);
-            this.txtPrecio1.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPrecio1.Location = new System.Drawing.Point(502, 98);
             this.txtPrecio1.Name = "txtPrecio1";
-            this.txtPrecio1.Size = new System.Drawing.Size(132, 22);
+            this.txtPrecio1.Size = new System.Drawing.Size(100, 20);
             this.txtPrecio1.TabIndex = 8;
             // 
             // btnRegistrar
             // 
-            this.btnRegistrar.Location = new System.Drawing.Point(751, 248);
-            this.btnRegistrar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRegistrar.Location = new System.Drawing.Point(563, 202);
             this.btnRegistrar.Name = "btnRegistrar";
-            this.btnRegistrar.Size = new System.Drawing.Size(100, 28);
+            this.btnRegistrar.Size = new System.Drawing.Size(75, 23);
             this.btnRegistrar.TabIndex = 2;
             this.btnRegistrar.Text = "Registrar";
             this.btnRegistrar.UseVisualStyleBackColor = true;
@@ -110,50 +106,45 @@
             // 
             // txtNumero1
             // 
-            this.txtNumero1.Location = new System.Drawing.Point(669, 55);
-            this.txtNumero1.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNumero1.Location = new System.Drawing.Point(502, 45);
             this.txtNumero1.MaxLength = 6;
             this.txtNumero1.Name = "txtNumero1";
-            this.txtNumero1.Size = new System.Drawing.Size(132, 22);
+            this.txtNumero1.Size = new System.Drawing.Size(100, 20);
             this.txtNumero1.TabIndex = 7;
             // 
             // lblPrecio1
             // 
             this.lblPrecio1.AutoSize = true;
-            this.lblPrecio1.Location = new System.Drawing.Point(595, 121);
-            this.lblPrecio1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPrecio1.Location = new System.Drawing.Point(446, 98);
             this.lblPrecio1.Name = "lblPrecio1";
-            this.lblPrecio1.Size = new System.Drawing.Size(46, 16);
+            this.lblPrecio1.Size = new System.Drawing.Size(37, 13);
             this.lblPrecio1.TabIndex = 6;
             this.lblPrecio1.Text = "Precio";
             // 
             // lblNumero1
             // 
             this.lblNumero1.AutoSize = true;
-            this.lblNumero1.Location = new System.Drawing.Point(595, 55);
-            this.lblNumero1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblNumero1.Location = new System.Drawing.Point(446, 45);
             this.lblNumero1.Name = "lblNumero1";
-            this.lblNumero1.Size = new System.Drawing.Size(55, 16);
+            this.lblNumero1.Size = new System.Drawing.Size(44, 13);
             this.lblNumero1.TabIndex = 5;
             this.lblNumero1.Text = "Numero";
             // 
             // lblOrigen
             // 
             this.lblOrigen.AutoSize = true;
-            this.lblOrigen.Location = new System.Drawing.Point(27, 121);
-            this.lblOrigen.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblOrigen.Location = new System.Drawing.Point(20, 98);
             this.lblOrigen.Name = "lblOrigen";
-            this.lblOrigen.Size = new System.Drawing.Size(47, 16);
+            this.lblOrigen.Size = new System.Drawing.Size(38, 13);
             this.lblOrigen.TabIndex = 4;
             this.lblOrigen.Text = "Origen";
             // 
             // lblDescripcion1
             // 
             this.lblDescripcion1.AutoSize = true;
-            this.lblDescripcion1.Location = new System.Drawing.Point(404, 155);
-            this.lblDescripcion1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblDescripcion1.Location = new System.Drawing.Point(303, 126);
             this.lblDescripcion1.Name = "lblDescripcion1";
-            this.lblDescripcion1.Size = new System.Drawing.Size(79, 16);
+            this.lblDescripcion1.Size = new System.Drawing.Size(63, 13);
             this.lblDescripcion1.TabIndex = 3;
             this.lblDescripcion1.Text = "Descripcion";
             // 
@@ -165,38 +156,34 @@
             "P",
             "F",
             "R"});
-            this.lstMarca1.Location = new System.Drawing.Point(124, 52);
-            this.lstMarca1.Margin = new System.Windows.Forms.Padding(4);
+            this.lstMarca1.Location = new System.Drawing.Point(93, 42);
             this.lstMarca1.Name = "lstMarca1";
-            this.lstMarca1.Size = new System.Drawing.Size(160, 24);
+            this.lstMarca1.Size = new System.Drawing.Size(121, 21);
             this.lstMarca1.TabIndex = 2;
             // 
             // rtbDescripcion1
             // 
-            this.rtbDescripcion1.Location = new System.Drawing.Point(304, 175);
-            this.rtbDescripcion1.Margin = new System.Windows.Forms.Padding(4);
+            this.rtbDescripcion1.Location = new System.Drawing.Point(228, 142);
             this.rtbDescripcion1.MaxLength = 50;
             this.rtbDescripcion1.Name = "rtbDescripcion1";
-            this.rtbDescripcion1.Size = new System.Drawing.Size(291, 117);
+            this.rtbDescripcion1.Size = new System.Drawing.Size(219, 96);
             this.rtbDescripcion1.TabIndex = 0;
             this.rtbDescripcion1.Text = "";
             // 
             // lblMarca1
             // 
             this.lblMarca1.AutoSize = true;
-            this.lblMarca1.Location = new System.Drawing.Point(27, 55);
-            this.lblMarca1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblMarca1.Location = new System.Drawing.Point(20, 45);
             this.lblMarca1.Name = "lblMarca1";
-            this.lblMarca1.Size = new System.Drawing.Size(45, 16);
+            this.lblMarca1.Size = new System.Drawing.Size(37, 13);
             this.lblMarca1.TabIndex = 1;
             this.lblMarca1.Text = "Marca";
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(767, 624);
-            this.btnSalir.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSalir.Location = new System.Drawing.Point(575, 507);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(100, 37);
+            this.btnSalir.Size = new System.Drawing.Size(75, 30);
             this.btnSalir.TabIndex = 3;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
@@ -204,10 +191,9 @@
             // 
             // btnConsulta
             // 
-            this.btnConsulta.Location = new System.Drawing.Point(751, 207);
-            this.btnConsulta.Margin = new System.Windows.Forms.Padding(4);
+            this.btnConsulta.Location = new System.Drawing.Point(563, 168);
             this.btnConsulta.Name = "btnConsulta";
-            this.btnConsulta.Size = new System.Drawing.Size(100, 28);
+            this.btnConsulta.Size = new System.Drawing.Size(75, 23);
             this.btnConsulta.TabIndex = 4;
             this.btnConsulta.Text = "Consultar";
             this.btnConsulta.UseVisualStyleBackColor = true;
@@ -216,19 +202,17 @@
             // lblMarca2
             // 
             this.lblMarca2.AutoSize = true;
-            this.lblMarca2.Location = new System.Drawing.Point(27, 55);
-            this.lblMarca2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblMarca2.Location = new System.Drawing.Point(20, 45);
             this.lblMarca2.Name = "lblMarca2";
-            this.lblMarca2.Size = new System.Drawing.Size(45, 16);
+            this.lblMarca2.Size = new System.Drawing.Size(37, 13);
             this.lblMarca2.TabIndex = 1;
             this.lblMarca2.Text = "Marca";
             // 
             // rtbDescripcion2
             // 
-            this.rtbDescripcion2.Location = new System.Drawing.Point(304, 23);
-            this.rtbDescripcion2.Margin = new System.Windows.Forms.Padding(4);
+            this.rtbDescripcion2.Location = new System.Drawing.Point(228, 19);
             this.rtbDescripcion2.Name = "rtbDescripcion2";
-            this.rtbDescripcion2.Size = new System.Drawing.Size(289, 243);
+            this.rtbDescripcion2.Size = new System.Drawing.Size(218, 198);
             this.rtbDescripcion2.TabIndex = 0;
             this.rtbDescripcion2.Text = "";
             // 
@@ -240,21 +224,18 @@
             "P",
             "R",
             "F"});
-            this.lstMarca2.Location = new System.Drawing.Point(124, 52);
-            this.lstMarca2.Margin = new System.Windows.Forms.Padding(4);
+            this.lstMarca2.Location = new System.Drawing.Point(93, 42);
             this.lstMarca2.Name = "lstMarca2";
-            this.lstMarca2.Size = new System.Drawing.Size(160, 24);
+            this.lstMarca2.Size = new System.Drawing.Size(121, 21);
             this.lstMarca2.TabIndex = 2;
             // 
             // mrcOrigen
             // 
             this.mrcOrigen.Controls.Add(this.optImportado);
             this.mrcOrigen.Controls.Add(this.optNacional);
-            this.mrcOrigen.Location = new System.Drawing.Point(57, 143);
-            this.mrcOrigen.Margin = new System.Windows.Forms.Padding(4);
+            this.mrcOrigen.Location = new System.Drawing.Point(43, 116);
             this.mrcOrigen.Name = "mrcOrigen";
-            this.mrcOrigen.Padding = new System.Windows.Forms.Padding(4);
-            this.mrcOrigen.Size = new System.Drawing.Size(239, 123);
+            this.mrcOrigen.Size = new System.Drawing.Size(179, 100);
             this.mrcOrigen.TabIndex = 9;
             this.mrcOrigen.TabStop = false;
             this.mrcOrigen.Text = "Origen";
@@ -262,10 +243,9 @@
             // optImportado
             // 
             this.optImportado.AutoSize = true;
-            this.optImportado.Location = new System.Drawing.Point(12, 95);
-            this.optImportado.Margin = new System.Windows.Forms.Padding(4);
+            this.optImportado.Location = new System.Drawing.Point(9, 77);
             this.optImportado.Name = "optImportado";
-            this.optImportado.Size = new System.Drawing.Size(89, 20);
+            this.optImportado.Size = new System.Drawing.Size(72, 17);
             this.optImportado.TabIndex = 1;
             this.optImportado.TabStop = true;
             this.optImportado.Text = "Importado";
@@ -274,10 +254,9 @@
             // optNacional
             // 
             this.optNacional.AutoSize = true;
-            this.optNacional.Location = new System.Drawing.Point(12, 47);
-            this.optNacional.Margin = new System.Windows.Forms.Padding(4);
+            this.optNacional.Location = new System.Drawing.Point(9, 38);
             this.optNacional.Name = "optNacional";
-            this.optNacional.Size = new System.Drawing.Size(85, 20);
+            this.optNacional.Size = new System.Drawing.Size(70, 17);
             this.optNacional.TabIndex = 0;
             this.optNacional.TabStop = true;
             this.optNacional.Text = "Nacional ";
@@ -290,26 +269,27 @@
             this.mrcRepuestos2.Controls.Add(this.lstMarca2);
             this.mrcRepuestos2.Controls.Add(this.rtbDescripcion2);
             this.mrcRepuestos2.Controls.Add(this.lblMarca2);
-            this.mrcRepuestos2.Location = new System.Drawing.Point(16, 322);
-            this.mrcRepuestos2.Margin = new System.Windows.Forms.Padding(4);
+            this.mrcRepuestos2.Location = new System.Drawing.Point(12, 262);
             this.mrcRepuestos2.Name = "mrcRepuestos2";
-            this.mrcRepuestos2.Padding = new System.Windows.Forms.Padding(4);
-            this.mrcRepuestos2.Size = new System.Drawing.Size(912, 294);
+            this.mrcRepuestos2.Size = new System.Drawing.Size(684, 239);
             this.mrcRepuestos2.TabIndex = 1;
             this.mrcRepuestos2.TabStop = false;
             this.mrcRepuestos2.Text = "Repuestos Ingresados";
             // 
             // frmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(937, 676);
+            this.ClientSize = new System.Drawing.Size(702, 550);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.mrcRepuestos2);
             this.Controls.Add(this.mrcDatos);
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmMain";
-            this.Text = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Cordoba repuestos";
             this.mrcDatos.ResumeLayout(false);
             this.mrcDatos.PerformLayout();
             this.mrcOrigen.ResumeLayout(false);
